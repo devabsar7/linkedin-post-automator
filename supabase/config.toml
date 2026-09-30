@@ -1,0 +1,26 @@
+# Hosted Supabase project — do not require local `supabase start`.
+
+[db]
+major_version = 15
+
+# Cron + OAuth callback need to be reachable without a user JWT.
+[functions.bootstrap-owner]
+verify_jwt = false
+
+[functions.linkedin-oauth-callback]
+verify_jwt = false
+
+[functions.weekly-content]
+verify_jwt = false
+
+[functions.process-due-posts]
+verify_jwt = false
+
+[functions.token-health]
+verify_jwt = false
+
+[functions.retention-heartbeat]
+verify_jwt = false
+
+[functions.health]
+verify_jwt = false

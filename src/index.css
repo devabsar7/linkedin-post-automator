@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --bg: #f4f6f8;
+  --bg-elevated: #ffffff;
+  --ink: #14212b;
+  --muted: #5b6b78;
+  --line: #d7dee5;
+  --accent: #0f6e56;
+  --accent-2: #c45c26;
+  --danger: #b42318;
+  --ok: #0f6e56;
+  --warn: #b54708;
+  --shadow: 0 12px 40px rgba(20, 33, 43, 0.08);
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "Source Sans 3", "Segoe UI", sans-serif;
+}
+
+.dark {
+  --bg: #0d141a;
+  --bg-elevated: #152029;
+  --ink: #e8eef3;
+  --muted: #9aabb8;
+  --line: #243442;
+  --accent: #3dba95;
+  --accent-2: #e08a4f;
+  --danger: #f97066;
+  --ok: #3dba95;
+  --warn: #fdb022;
+  --shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--ink);
+  background:
+    radial-gradient(1200px 600px at 10% -10%, color-mix(in oklab, var(--accent) 16%, transparent), transparent 60%),
+    radial-gradient(900px 500px at 100% 0%, color-mix(in oklab, var(--accent-2) 14%, transparent), transparent 55%),
+    var(--bg);
+}
+
+h1,
+h2,
+h3,
+.font-display {
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+}

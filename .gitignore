@@ -1,0 +1,45 @@
+# Dependencies
+node_modules
+.pnp
+.pnp.js
+
+# Build
+dist
+dist-ssr
+*.local
+
+# Env (never commit secrets)
+.env
+.env.*
+!.env.example
+
+# Local one-off setup artifacts / secret dumps
+scripts/*.local.sql
+scripts/*.local.env
+*secrets*.local*
+*.local.env
+*.local.sql
+vault-update.local.sql
+edge-secrets.local.env
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+*.swp
+.idea
+.vscode/*
+!.vscode/extensions.json
+
+# Logs / coverage
+logs
+*.log
+npm-debug.log*
+coverage
+.vitest
+
+# Supabase local (not used; ignore if created accidentally)
+supabase/.branches
+supabase/.temp
+
+# TypeScript
+*.tsbuildinfo

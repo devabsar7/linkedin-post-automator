@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Example</title>
+    <item>
+      <title>Agentic workflows in practice</title>
+      <link>https://example.com/posts/agents?utm_source=x</link>
+      <pubDate>Mon, 24 Mar 2026 10:00:00 GMT</pubDate>
+      <description><![CDATA[<p>Short snippet about agents.</p>]]></description>
+      <category>AI</category>
+    </item>
+    <item>
+      <title>Duplicate title</title>
+      <link>https://example.com/posts/agents</link>
+      <description>No date</description>
+    </item>
+  </channel>
+</rss>
